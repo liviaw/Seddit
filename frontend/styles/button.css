@@ -1,0 +1,83 @@
+.fa {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: darkblue;
+}
+
+
+/* profile button */
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+
+/* Orange */
+.warning {
+  color: #0079D3;
+}
+
+.warning:hover {
+  background: #0079D3;
+  color: white;
+}
+
+
+/* Gray */
+.default {
+  color: black;
+}
+
+.default:hover {
+  background: #e7e7e7;
+}
+
+#updateProfButton {
+  background-color: --reddit-grey;
+  color:  --reddit-orange;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+#showPassText {
+  padding-left: 0px;
+  margin: 2px;
+  text-align: justify;
+  align-content: justify;
+  font-size: 0.77em;
+  font-weight: 500;
+  
+}
+#doneUpdateButton {
+  background-color: var(--reddit-orange);
+  color:  white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+
+.showUpdateProf {
+
+}
+
+.unshowUpdProf {
+
+}

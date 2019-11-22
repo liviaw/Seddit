@@ -1,0 +1,122 @@
+.full-post {
+  background-color: var(--reddit-light-grey);
+    margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0px;
+
+}
+
+.full-post-ul {
+  background-color: #e8e7ed;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+.post {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;  
+  background-color: white;
+  border: 1px solid var(--reddit-grey);
+}
+
+.post .vote {
+  width: 45px;
+  background-color: var(--reddit-light-grey);
+  padding: 20px;
+}
+
+.post .content {
+  padding: 10px;
+  max-width: 70%;
+}
+
+.post-title {
+  padding-bottom: 10px;
+  margin: 0;
+  font-size: 20px;
+}
+
+.post-author {
+  margin: 5px 0;
+  font-size: 12px;
+  color: var(--reddit-blue);
+}
+
+.post-content {
+  padding-bottom: 10px;
+  margin: 0;
+  font-size: 15px;
+}
+
+.post-seddit {
+  padding-bottom: 10px;
+  margin: 0;
+  font-size: 12px;
+  color: var(--reddit-blue);  
+}
+
+.post-date {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  font-size: 9px;
+  text-align: right;
+  color: var(--reddit-blue); 
+  align-items: flex-start;
+  float: right;
+  margin-left: auto;
+}
+
+.post-thumbnail {
+  padding-bottom: 10px;
+  width: 50px;
+}
+
+.post .vote .vote-item {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+  top: 10px;
+  
+}
+
+.post-image {
+  position: relative;
+  width: 100%;
+  align-content: center;
+  align-self: center;
+  float: auto;
+}
+
+.comment { 
+  text-align: left;
+  float: auto;
+  padding:10px;
+  width: 50px;
+  color: var(--reddit-blue); 
+  margin: 0px;
+  height: 100%; 
+}
+
+.comment-div {
+  .flex-container {
+  flex-direction: row;
+  }
+}
+
+.comment-button {
+  text-align: right;
+  position: relative;
+  align-content: center;
+  width: 100%;
+}
+
+.comment-section {
+
+}
+.comment-form {
+  padding: 0px;
+}
