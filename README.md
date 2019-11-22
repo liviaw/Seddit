@@ -1,6 +1,3 @@
-<!--
-    DO NOT CHANGE THIS FILE - IT MAY BE UPDATED DURING THE ASSIGNMENT
--->
 ## Seddit - Introduction
 
 JavaScript is used increasingly to provide a native-like application experience in the web. One
@@ -10,11 +7,8 @@ to navigate away from a page to do anything, they retain a degree of user and ap
 
 There are millions of websites that utilise SPAs in part of, or all of their web applications.
 
-The assignment intends to teach students to build a simple SPA which can fetch dynamic data from a HTTP/S API.
-Your task will be to provide an implemention of a SPA that can provide a number of key features.
 
-Some of the skills/concepts this assignment aims to test (and build upon):
-
+Some of the skills/concepts implemented:
 * Simple event handling (buttons)
 * Advanced Mouse Events (Swipe)
 * Fetching data from an API
@@ -25,35 +19,16 @@ Some of the skills/concepts this assignment aims to test (and build upon):
 * Offline Support
 * Routing (URL fragment based routing)
 
+
 ## API
 
-The backend server will be where you'll be getting your data. Don't touch the code in the backend; although we've provided the source, 
-it's meant to be a black box. Final testing will be done with our own backend so don't _assume_ any single piece of data will be there. Use the instructions provided in the backend/README.md
-to get it started.
+The backend server will be where you'll be getting your data. 
 
 For the full docs on the API, start the backend server and navigate to the root (very likely to be `localhost:5000`, the exact url will be printed when you run the backend, see backend/README.md for more info). You'll see all the endpoints, descriptions and expected responses.
 
-## A Working Product
-Your application should be compatible with 'modern' Chrome, Safari, and Mozilla browsers.
-We will assume your browser has JavaScript enabled, and supports ES6 syntax.
+## Compatibility
+This application should be compatible with 'modern' Chrome, Safari, and Mozilla browsers, assuming your browser has JavaScript enabled, and supports ES6 syntax.
 
-### Writing HTML - Restrictions
-
-You are not permitted to edit the HTML provided in  *frontend/index.html* except you may change the `<head></head>` section to add your own styles and scripts.
-
-You are not permitted to add HTML files.
-
-You must create the HTML entirely via your JavaScript scripts.  Your task is to manipulate and control your application _entirely_ dynamically!
-
-Also please use `.innerHTML` sparingly.  Using `.innerHTML` amounts to the same thing as hardcoding your HTML.  You'll be penalised if you rely on this method.  Ask in the forum if you require more information.
-
-You are not permitted to use Javascript written by other people.
-
-You are not permitted to use NPM to install packages.
-
-You are not permitted to use frameworks (React, Angular, Vue ...)
-
-You are permitted to use small snippets of general purpose code from external sources such as Stack Overflow with proper attribution.
 
 ## Getting Started
 Clone the repository provided. It has a whole bunch of code, documentation, and a whole working server you'll need for
@@ -63,10 +38,8 @@ Please read the relevant docs for setup in the folders `/backend` and `/frontend
 Each folder outlines basic steps to get started. There are also some comments provided in the frontend source code.
 
 ## Milestones
+This program is implemented in levels.
 Level 0 focuses on the basic user interface and interaction with of the site.
-There is no need to implement any integration with the backend for this level.
-When demonstrating the functionality included in level 0, you are not required to prevent access 
-to login-protected pages - all pages may be accessible by changing the URL.
 
 ### Level 0
 
@@ -225,58 +198,3 @@ Add just the count of followers / follows to everyones public user page
 **Delete/Update Post**
 Let a logged in user update a post they made or delete it via (`DELETE /post`) or (`PUT /post`)
 
-**Search functionality**
-Let a logged in user search for a post made by any user that they follow. You'll have to 
-potentially combine a few different endpoint responses to allow this. 
-
-## Level 4
-This set of tasks is an extension beyond the previous levels and should only be attempted once the previous levels have been completed.
-
-**Multiple Subseddits**
-As mentioned earlier, a subseddit is denoted by a "s/" in front of the subseddit name. Users should be able to make a post to a specific subseddit (which may or may not have been posted to before). A logged in user should also be able to view the posts made to a specific subseddit. You may choose to show this in the URL as `/s/:subseddit_name` if you wish. The original news feed - which presented the `s/all` subseddit - must still remain as the home page and must also show all posts made across all subseddits. Any post that is not posted to a specific subseddit must appear on `s/all`.
-
-**Slick UI**
-The user interface looks good, is performant, makes logical sense, and is usable. 
-
-**Push Notifications**
-Users can receive push notifications when a user they follow posts an image. There is no endpoint or websocket provided, we expect you to figure out how to do this given the existing endpoints. Notice that since we do not give you a websocket (nor teach it in the course) we are happy for you to use polling ot achieve this, i.e check if there is anything to notify the user of every 5 or so seconds.
-
-The delay is up to you, but remember you want it to look semi live without 
-overwhelming the event queue.
-
-**Offline Access**
-Users can access the "Seddit" at all times by using Service Workers to cache the page (and previous content) locally.
-d
-**Fragment based URL routing**
-Users can access different pages using URL fragments:
-
-```
-/#profile=1
-/#feed
-/#profile=420
-```
-
-# FAQ
-
-1. I get a 403 (invalid auth token) on all my api requests?
-
-Make sure you are authorized, remember you need to set your header with the token the login endpoing returned to you. 
-
-```js
-const options = {
-    headers: {
-        'Authorization' : `Token ${myToken}`
-    }
-} 
-fetch("/user", options)
-```
-
-Just for playing around you can use the `/dummy` endpoints which let you skip this step but do note you need working auth for most of the levels.
-
-2. How do i know what a endpoint takes in and what it returns?
-
-Run the backend server and navigate to the root, usualy 127.0.0.1:5000 or similar. There is a full set of docs which outlines every url you can hit, what method to use, a description, the paramaters it needs and the structure of the response it gives. It also outlines every possible error code it returns.
-
-3. I'm getting a '500' error
-
-That means that the server is crashing, this might mean your doing something really weird the backend wasn't ready to handle, in general check the forum in this case. We may have just made a oopsie.
