@@ -1,0 +1,25 @@
+Livia’s 2041 Assignment 2 Diary
+
+Date	Start	Stop	Activity	Comments
+4th Aug		15:00	15:30	Read	Read through the specs and make notes
+6th Aug		09:00	13:50	Code	pull assignment files and set up environment and start subset 0
+6th Aug		14:00	14:30	Debug	fix bug
+6th Aug		16:00	19:00	Debug	more debugging
+9th Aug		5:00	12:00	Code	finish subset 0
+9th Aug		13:00	15:30	Code 	start subset 1
+9th July	21:00	23:00	test	make public feed
+10th Aug	09:00	12:00 	Code	Create profile modal
+10th Aug	14:50	22:00	Code	make sign up modal and log in feed
+11th Aug	02:30	03:30	Code	create upvote and comment modal
+11th Aug	11:00	19:00	Code and debug	debug and code for profile
+11th aug	19:30	22:00	Debug	run test and debug
+11th aug	23:00	5:00	Code	create post modal
+11th aug	11:00	23:30	Code	crate file reader for image
+11th aug	03:00	04:30	Debugging	debug
+12th aug	09:00	12:00	Code	fix styles and create comment function
+12th aug	15:00	23:00	Code	make infinite scroll
+12th aug	23:00	6:00	Debug	debug and deleting scrolling function
+13th aug	6:00	7:00	Code	make colored icon for vote
+13th aug	7:00	8:00	Debug	fixed post image
+13th aug	11:00	21:30	Code	Code for subset 2 and 3
+
