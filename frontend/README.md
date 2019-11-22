@@ -25,10 +25,9 @@ use username 'user' and password '8tv1oz'
 
 Use control-c to shut this server down.
 
-When you visit the link you will be prompted for a username and password, use the ones printed to the console. This is to prevent other students on the same network as you being able to see your code.
+When you visit the link you will be prompted for a username and password, use the ones printed to the console. 
 
-In addition we've provided a basic project scaffold for you to build from.
-You can use everything we've given you, although there's no requirement to use anything.
+
 ```bash
 # scaffold
 data
@@ -45,5 +44,5 @@ styles
   - provided.css  # some sample css we've provided (add more stylesheets as you please)
 ```
 
-To make sure everything is working correctly we strongly suggest you read the instructions in both backend and frontend,
+To make sure everything is working correctly please read the instructions in both backend and frontend,
 and try to start both servers (frontend and backend).
